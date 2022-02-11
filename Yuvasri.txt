@@ -1,0 +1,58 @@
+1)
+val input_string="https://www.google.com"
+val reverse_inputString=input_string.reverse.toUpperCase()
+println(reverse_inputString)
+
+2)
+val donutName = "Vanilla Donut"
+  val quantityPurchased = 10
+  val price = 2.50
+  val donutJson =
+    s"""
+       |{
+       |"donut_name":"$donutName",
+       |"quantity_purchased":"$quantityPurchased",
+       |"price":$price
+       |}
+      """.stripMargin
+  println(donutJson)
+
+3)
+import scala.io.StdIn._
+    val name = readLine("Enter your name: ")
+    print("Enter your age: ")
+    val age = readInt()
+    print("Name: ")
+    println(name)
+    print("Age: ")
+    print(age)
+
+4)
+val str="http://www.google.com"
+val find_char=str.charAt(7)
+println(find_char)
+
+5)
+val glazedDonut = "Glazed Donut"
+    val unitPrice = 2.50
+    val qtyPurchased = 10
+    val totalCost = qtyPurchased * unitPrice
+
+    println(f"""Total cost of $qtyPurchased $glazedDonut${if (qtyPurchased > 1) "s" else ""} = $$$totalCost%1.2f""")
+
+
+6)
+import scala.io.StdIn._
+val str = readLine("What is your favorite movie of all times?")
+ println(s"$str is totally awesome!")
+
+7)
+val coupon_code=List("A","BB","CCC","DDDD","EEEEE")
+for(i<-coupon_code){
+	println(i +"- "+i.length)
+}
+
+
+8)
+val number=List.range(100,150,10)
+println(number.sum)
